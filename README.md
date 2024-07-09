@@ -1,7 +1,7 @@
-## EventFlex-PaPA-
+# EventFlex-PaPA
 
 
-# Background Topics 
+## Background Topics 
 
 1) Blockchain Fundamentals: Understand the basics of blockchain technology, including decentralized networks, consensus mechanisms, smart contracts. 
 
@@ -17,7 +17,7 @@
 
  
 
-# Motivation of the project 
+## Motivation of the project 
 
 The purpose of this project is to create a intiutive and user friendly platform on which users can pay as per their attendence which is powered by blockchain technology. 
 
@@ -25,20 +25,20 @@ we aim to develop a Decentralized Event Payment System that allows attendees to 
 
  
 
-# Application Domain of the project problem 
+## Application Domain of the project problem 
 
  
 
 Our Decentralized Event Payment System is designed to support various digital event sectors, primarily benefiting decentralized autonomous organizations (DAOs) and their members. It serve to the needs of attendees, organizers, sponsors, and content creators across esports, gaming, digital content creation, community engagement, brand marketing, and NFT marketplaces. The system provides flexible payment options, efficient event management tools, innovative marketing channels, and exclusive NFT integration.
 
 
-# Algortihms Devised 
+## Algortihms Devised 
 
  
 
 Our system utilizes the Superfluid gateway to calculate payment amounts in real-time, adjusting them based on the duration attendees spend at each event segment. These calculations ensure fair and accurate billing, providing attendees with proof of attendance. By managing costs and resources efficiently, event organizers can ensure a smooth event experience for everyone involved. 
 
-Steps of the proposed System 
+## Steps of the proposed System 
 
  
 
@@ -48,15 +48,11 @@ Steps of the proposed System
 
 •⁠  ⁠Event Creation: Organizations can create events specifying:  
 
-a. Title, description, and category.  
+ a. Title, description, and category.  
 
-b. Start and end time of the event (or set it as a continuous  
+ b. Start and end time of the event (or set it as a continuous stream).  
 
-stream).  
-
-c. Superfluid stream rate (amount of cryptocurrency per  
-
-unit time). 
+ c. Superfluid stream rate (amount of cryptocurrency per unit time). 
 
 •⁠  ⁠Event Discovery: Users can browse and search for events based on various criteria (category, date, etc.). 
 
@@ -66,7 +62,7 @@ unit time).
 
  
 
-# Novelty/Application Innovations 
+## Novelty/Application Innovations 
 
  
 
