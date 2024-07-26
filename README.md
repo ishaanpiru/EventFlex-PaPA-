@@ -22,13 +22,6 @@ Both, the web application and bot share a common database. Discord Bot guards th
 - SuperFluid (To establish payment stream)
 - Polygon (To deploy smart contracts)
 
-**Discord Bot:**
-
-- Node.js
-- Discord.js
-- Tableland
-- Superfluid
-
 ## How does it work?
 
 ### Web Application:
@@ -42,18 +35,6 @@ Both, the web application and bot share a common database. Discord Bot guards th
 - You can then join the discord voice channel of the Event.
 - Remember to stop the Stream after you leave the Event.
 - Once the Event is over, attendees can withdraw their RSVP Fees from the Event Details page of the respective Event.
-
-### Bot:
-
-- You can find the link to invite Bot on your discord server on the About Vlad Page on Web app.
-- Select the server to which you would like to add Vlad.
-- Paste the following command in your #general channel.
-    
-    `!init eventInfo {eventId} {vc-name}`
-    
-- Replace `{eventId}` with the Event Id of your event and `{vc-name}` with the Voice Channel Name on which the event would be hosted.
-- Before the event starts make sure to enable bot to monitor the Voice channel by entering the command `/start-monitoring`on your #general channel.
-- After the event ends, you can stop the bot from monitoring the Voice channel by entering the command `/stop-monitoring` on your #general channel.
 
 ## Use Cases
 
@@ -85,7 +66,4 @@ Both, the web application and bot share a common database. Discord Bot guards th
 <img width="1047" alt="image" src="https://user-images.githubusercontent.com/56120084/192184390-bea065b7-ac2b-44bd-8020-562027b40710.png">
 - EPNS notifications for events
 
-## Team:
 
-- Nitanshu Lokhande
-- Darshan Hande
