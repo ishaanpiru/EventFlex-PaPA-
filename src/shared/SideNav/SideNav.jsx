@@ -20,7 +20,6 @@ function getItem(label, key, icon, children, type) {
 const items = [
   getItem('Create Event', 'create-event', <BiAddToQueue style={{ fontSize: '1.2vw', color: 'white' }}/>),
   getItem('Events', 'events', <MdEventNote style={{ fontSize: '1.2vw', color: 'white' }}/>),
-  getItem('About Vlad', 'about-vlad', <GiDeathSkull style={{ fontSize: '1.2vw', color: 'white' }}/>),
 ];
 
 const SideNav = (props) => {

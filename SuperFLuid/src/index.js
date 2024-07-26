@@ -23,8 +23,7 @@ let EVENT_ID = "",
   CHANNEL_ID = "",
   ORG_META_ADDRESS = "",
   SERVER_ID = "",
-  FDAIX_SUPER_TOKEN = "0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f", // polygon mumbai address
-  BOT_NAME = "Vlad_FlexiPay"; // need to change this shitty little name
+  FDAIX_SUPER_TOKEN = "0x5D8B4C2554aeB7e86F387B4d6c00Ac33499Ed01f"// polygon mumbai address
 
 var sf, signer, alchemySigner, tableLand, monitorCaller;
 
