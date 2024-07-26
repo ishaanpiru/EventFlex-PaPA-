@@ -12,9 +12,9 @@ const Navbar = () => {
     <div className='nav-div'>
         <Menu className='navbar' mode="horizontal" theme='dark'>
             <div className='nav-logo-div' onClick={()=>navigate('/')}>
-                <img src="/assets/images/flexipay-logo.png" alt="flexipay-logo.png" className='nav-logo' />
+                <img src="/assets/images/EventFlex-logo.png" alt="EventFlex-logo.png" className='nav-logo' />
                 <span className='logo-heading'>
-                    FlexiPay
+                    EventFlex
                 </span>
             </div>
             <div className='navbar-btn-div'>

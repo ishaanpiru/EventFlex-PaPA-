@@ -1,11 +1,11 @@
 const hre = require("hardhat");
 
 async function main() {
-  const FlexiPayContract = await hre.ethers.getContractFactory("FlexiPay");
-  const FlexiPayContractDeployed = await FlexiPayContract.deploy();
-  await FlexiPayContractDeployed.deployed();
+  const EventFlexContract = await hre.ethers.getContractFactory("Eventflex");
+  const EventFlexContractDeployed = await EventFlexContract.deploy();
+  await EventFlexContractDeployed.deployed();
   console.log(
-    `Sample contract deployed to ${FlexiPayContractDeployed.address}`
+    `Sample contract deployed to ${EventFlexContractDeployed.address}`
   );
 }
 

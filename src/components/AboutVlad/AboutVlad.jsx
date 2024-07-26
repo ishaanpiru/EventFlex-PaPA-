@@ -17,7 +17,7 @@ const AboutVlad = () => {
       <div className='av-wv-div'>
         <h2 className='av-heading'>Why Vlad ?</h2>
         <p className='av-reg-text av-wv-text'>
-          Flexipay is based on the idea of paying for an event only for the amount of time you attend it, not more or not less. But, if there are a large number of participants attending the event, it would be really frustrating for the event organizers to regulate the participants. It would require more human force and wouldn’t be something productive to be done by humans. Here, Vlad comes to the event organizers' rescue. Vlad would only allow the participants who have registered and their stream running, to attend the event and would kick out the remaining participants. Vlad would also prevent spamming during the events.
+        EventFlex is based on the idea of paying for an event only for the amount of time you attend it, not more or not less. But, if there are a large number of participants attending the event, it would be really frustrating for the event organizers to regulate the participants. It would require more human force and wouldn’t be something productive to be done by humans. Here, Vlad comes to the event organizers' rescue. Vlad would only allow the participants who have registered and their stream running, to attend the event and would kick out the remaining participants. Vlad would also prevent spamming during the events.
         </p>
       </div>
       <div className='av-uv-div'>

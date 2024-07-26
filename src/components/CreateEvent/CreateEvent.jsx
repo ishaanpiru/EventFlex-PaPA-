@@ -18,7 +18,7 @@ import { Buffer } from "buffer";
 // import Axios from "axios";
 import { InboxOutlined } from "@ant-design/icons";
 import addresses from "../../config";
-import FlexiPayArtifact from "../../Ethereum/FlexiPay.json";
+import EventFlexArtifact from "../../Ethereum/EventFlex.json";
 // import GetContract from "../../hooks/GetContract";
 import Loader from "../../shared/Loader/Loader";
 import tableNames from "../../databaseConfig";
@@ -50,7 +50,7 @@ const CreateEvent = () => {
     nftImage: null,
   });
 
-  // let flexiPayContract = GetContract(addresses.FlexiPay, FlexiPayArtifact.abi);
+  // let EventFlexContract = GetContract(addresses.EventFlex, EventFlexArtifact.abi);
   const { authenticate, isAuthenticated, user } = useMoralis();
   const { error, isUploading, moralisFile, saveFile } = useMoralisFile();
 
@@ -271,8 +271,8 @@ const CreateEvent = () => {
       console.log("Added event to event table", writeRes);
       console.log("Added event to event table", eventInsertRes);
       let ethProvider = new ethers.providers.Web3Provider(window.ethereum);
-      let flexiPayContract = new ethers.Contract(addresses.FlexiPay, FlexiPayArtifact.abi, ethProvider.getSigner(0));
-      let addEventTxn = await flexiPayContract.addEvent(
+      let EventFlexContract = new ethers.Contract(addresses.EventFlex, EventFlexArtifact.abi, ethProvider.getSigner(0));
+      let addEventTxn = await EventFlexContract.addEvent(
         eventId.trim(),
         eventRsvpFee,
         { gasLimit: "9000000" }

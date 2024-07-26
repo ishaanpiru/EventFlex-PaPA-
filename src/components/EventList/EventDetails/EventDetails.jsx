@@ -9,7 +9,7 @@ import GetAccount from "../../../hooks/GetAccount";
 import { Framework } from "@superfluid-finance/sdk-core";
 import { ethers } from "ethers";
 import tableNames from "../../../databaseConfig";
-import FlexiPayArtifact from "../../../Ethereum/FlexiPay.json";
+import EventFlexArtifact from "../../../Ethereum/EventFlex.json";
 import GetContract from "../../../hooks/GetContract";
 import addresses from "../../../config";
 import ERC20ABi from "../../../Ethereum/ERC20ABI.json";
@@ -25,7 +25,7 @@ const EventDetails = () => {
   const { authenticate, isAuthenticated, user } = useMoralis();
   const { error, isUploading, moralisFile, saveFile } = useMoralisFile();
   let ethProvider = new ethers.providers.Web3Provider(window.ethereum);
-  let flexiPayContract = new ethers.Contract(addresses.FlexiPay, FlexiPayArtifact.abi, ethProvider.getSigner(0));
+  let EventFlexContract = new ethers.Contract(addresses.EventFlex, EventFlexArtifact.abi, ethProvider.getSigner(0));
   let ProofOfAttendenceContract = GetContract(
     addresses.ProofOfAttendence,
     ProofOfAttendenceAbi.abi
@@ -199,8 +199,8 @@ const EventDetails = () => {
 
   const checkUserWithdrawnRsvpFee = async () => {
     try {
-      if(flexiPayContract) {
-        let isUserWithDrawnRsvp = await flexiPayContract.isRsvpFeeWithDrawn(
+      if(EventFlexContract) {
+        let isUserWithDrawnRsvp = await EventFlexContract.isRsvpFeeWithDrawn(
           event_id
         );
         return isUserWithDrawnRsvp;
@@ -332,11 +332,11 @@ const EventDetails = () => {
         }
 
         let eventRsvpTxn = await superFakeDAITokenContract.transfer(
-          addresses.FlexiPay,
+          addresses.EventFlex,
           ethers.utils.parseEther(String(event[13]))
         );
         await eventRsvpTxn.wait();
-        let eventRespUpdateTxn = await flexiPayContract.registerForEvent(
+        let eventRespUpdateTxn = await EventFlexContract.registerForEvent(
           event_id,
           event[13],
           { gasLimit: "9000000" }
@@ -441,7 +441,7 @@ const EventDetails = () => {
   const withDrawRsvpFee = async () => {
     try {
       setIsLoading(true);
-      let withDrawTxn = await flexiPayContract.withDrawRsvpFee(event_id, { gasLimit: 9000000 });
+      let withDrawTxn = await EventFlexContract.withDrawRsvpFee(event_id, { gasLimit: 9000000 });
       await withDrawTxn.wait();
       setIsLoading(false);
       initTableLand();
