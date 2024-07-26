@@ -44,26 +44,3 @@ Both, the web application and bot share a common database. Discord Bot guards th
 - Time for which the stream is active could be utilized while issuing POAP tokens to the users.
 
 
-## Sneak Peak
-<img src="images/pic-1.png" alt="" />
-- Landing page at EventFlex
-<img src="images/pic-2.png" alt="" />
-- Page to create events by DAO communities with necessary details.
-<img src="images/pic-3.png" alt="" />
-- All Listed events are visible here.
-<img src="images/pic-4-1.png" alt="" />
-- Vlad info page our friendly discord bot which will help us kicking out participants with no active stream of tokens
-<img src="images/pic-4-2.png" alt="" />
-- Invite vlad to your server
-<img width="1446" alt="image" src="https://user-images.githubusercontent.com/56120084/192184806-c6e2cb45-3083-48ac-a4ac-04f14dac4ab7.png">
-- Event details page seperate for each event.
-<img width="1047" alt="image" src="https://user-images.githubusercontent.com/56120084/192184615-4e52f84f-3899-4e03-8a6c-3fc5a00886fc.png">
-- Section to manage streams or withdraw RSVP fees or subscribe to events.
-<img src="images/pic-5.png" alt="" />
-- test stream between attendee and organizer wallet 
-<img src="images/pic-6.png" alt="" />
-- Usage of Vlad discord bot using command.
-<img width="1047" alt="image" src="https://user-images.githubusercontent.com/56120084/192184390-bea065b7-ac2b-44bd-8020-562027b40710.png">
-- EPNS notifications for events
-
-
